@@ -13,7 +13,7 @@ namespace AddressBookProject
             {
                 Contacts.Add(contactArgument.Email, contactArgument);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentException)
             {
                 Console.WriteLine($"{contactArgument.FullName} is already in contacts");
             }

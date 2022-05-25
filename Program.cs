@@ -73,7 +73,7 @@ namespace AddressBookProject
                     Console.WriteLine($"Email: {contact.Email}");
                     Console.WriteLine($"Address: {contact.Address}");
                 }
-                catch (KeyNotFoundException ex)
+                catch (KeyNotFoundException)
                 {
                     Console.WriteLine("----------------------------");
                     Console.WriteLine($"No contact found for {email}");
